@@ -1,0 +1,824 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(134, 6, 6);
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+nav ul li {
+    list-style-type: none;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+
+}
+
+#logo img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+
+
+}
+
+#logo p {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin-bottom: 60px;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav ul li:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.15);
+    transition: color 0.2s;
+    cursor: pointer;
+
+}
+
+#pic1 img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 700px;
+    left: 500px;
+    border: 1px solid;
+    z-index: -5;
+}
+
+#pic1 h3 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+    border: 1px solid;
+    z-index: -5;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+#pic1 p {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 1030px;
+    left: 500px;
+    border: 1px solid;
+    z-index: -5;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+}
+
+#pic2 iframe {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    border: 1px solid;
+    z-index: -5;
+}
+
+#pic2 p {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 1030px;
+    left: 50px;
+    border: 1px solid;
+    z-index: -5;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+}
+
+#pic2 h3 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    border: 1px solid;
+    z-index: -5;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+section p:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+
+#preloader {
+    background: url(preloader.gif);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#welcomepic {
+    width: 100%;
+    height: 100vh;
+}
+
+#welcomepic img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#text-on-photo-head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 248, 245);
+    font-size: 72px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#t-o-p-p {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    color: rgb(245, 246, 245);
+    font-size: 42px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#button1 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2500%, -50%);
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+
+}
+
+#button2 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(2500%, -50%);
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+
+}
+
+#homepage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 5px gray;
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: -5;
+    color: brown;
+}
+
+/* Images */
+.slides {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: transform 0.5s ease;
+
+}
+
+/* Buttons */
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+    z-index: 100;
+}
+
+.navigation button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+#destheading {
+    color: brown;
+    left: 50px;
+    display: flex;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
+    z-index: -78;
+}
+
+#footerp1 {
+    top: 1300px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+#footerp2 {
+    top: 1300px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+#destp1 {
+    position: relative;
+    left: 50px;
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+    z-index: -678;
+}
+
+#lebvid {
+    left: 50px;
+    position: relative;
+    width: 92%;
+    z-index: -89;
+}
+
+#destp2 {
+    position: relative;
+    left: 50px;
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+    top: 10px;
+    z-index: -67;
+}
+
+#destpic1 img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -50;
+    top: 1000px;
+    border: 1px solid;
+    left: 50px;
+}
+
+#destpic1 p {
+    width: 60%;
+    position: absolute;
+    z-index: -50;
+    top: 1000px;
+    left: 400px;
+    color: darkgreen;
+}
+
+#destpic2 img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -50;
+    top: 1250px;
+    border: 1px solid;
+    left: 900px;
+}
+
+#destpic2 p {
+    width: 60%;
+    position: absolute;
+    z-index: -500;
+    top: 1250px;
+    left: 50px;
+    color: darkgreen;
+}
+
+#destpic3 img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -50;
+    top: 1500px;
+    border: 1px solid;
+    left: 50px;
+}
+
+#destpic3 p {
+    width: 60%;
+    position: absolute;
+    z-index: -50;
+    top: 1500px;
+    left: 400px;
+    color: darkgreen;
+}
+
+#destpic4 img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -50;
+    top: 1750px;
+    border: 1px solid;
+    left: 900px;
+}
+
+#destpic4 p {
+    width: 60%;
+    position: absolute;
+    z-index: -50;
+    top: 1750px;
+    left: 50px;
+    color: darkgreen;
+}
+
+#destpic5 img {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -50;
+    top: 2000px;
+    border: 1px solid;
+    left: 50px;
+}
+
+#destpic5 p {
+    width: 60%;
+    position: absolute;
+    z-index: -50;
+    top: 2000px;
+    left: 400px;
+    color: darkgreen;
+}
+
+#footerp3 {
+    top: 1300px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+#footerp4 {
+    top: 1300px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+#foodp {
+    left: 50px;
+    width: 90%;
+    position: absolute;
+    color: darkgreen;
+    z-index: -87;
+}
+
+#foodpic1 {
+    width: 350px;
+    height: 250px;
+    top: 200px;
+    position: absolute;
+    left: 50px;
+    z-index: -90;
+}
+
+#foodpic2 {
+    width: 350px;
+    height: 250px;
+    top: 450px;
+    position: absolute;
+    left: 450px;
+    z-index: -90;
+}
+
+#foodpic3 {
+    width: 350px;
+    height: 250px;
+    top: 700px;
+    position: absolute;
+    left: 850px;
+    z-index: -90;
+}
+
+#food-id-2 h1 {
+    top: 1000px;
+    position: absolute;
+    color: brown;
+    z-index: -87;
+    left: 50px;
+
+}
+
+#food-id-2 img {
+    top: 1100px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#food-id-2 p {
+    top: 1150px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+#food-id-2 h3 {
+    top: 1100px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#food-id-3 img {
+    top: 1400px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#food-id-3 p {
+    top: 1450px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+#food-id-3 h3 {
+    top: 1400px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#food-id-4 img {
+    top: 1700px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#food-id-4 h3 {
+    top: 1700px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#food-id-4 p {
+    top: 1750px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+#food-id-5 img {
+    top: 2000px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#food-id-5 h3 {
+    top: 2000px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#food-id-5 p {
+    top: 2050px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+#footerp5 {
+    top: 2350px;
+    position: absolute;
+    z-index: -87;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+
+    width: 250px;
+    left: 400px;
+
+    font-size: 25px;
+}
+
+#footerp6 {
+    top: 2300px;
+    position: absolute;
+    z-index: -87;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+
+    width: 250px;
+    left: 600px;
+
+    font-size: 25px;
+}
+
+#historydiv1 h1 {
+    position: absolute;
+    color: brown;
+    z-index: -87;
+    left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#historydiv1 p {
+    top: 150px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+}
+
+#historydiv1pic1 img {
+    top: 300px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#historydiv1pic1 h3 {
+    top: 300px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic1 p {
+    top: 350px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+
+#historydiv1pic2 img {
+    top: 600px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 50px;
+}
+
+#historydiv1pic2 h3 {
+    top: 600px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic2 p {
+    top: 650px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+
+#historydiv1pic3 img {
+    top: 900px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#historydiv1pic3 h3 {
+    top: 900px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic3 p {
+    top: 950px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+
+#historydiv1pic4 img {
+    top: 1200px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 50px;
+}
+
+#historydiv1pic4 h3 {
+    top: 1200px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic4 p {
+    top: 1250px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+
+#historydiv1pic5 img {
+    top: 1500px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 850px;
+}
+
+#historydiv1pic5 h3 {
+    top: 1500px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic5 p {
+    top: 1550px;
+    position: absolute;
+    z-index: -87;
+    left: 50px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+#historydiv1pic6 img {
+    top: 1800px;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    z-index: -87;
+    left: 50px;
+}
+
+#historydiv1pic6 h3 {
+    top: 1800px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#historydiv1pic6 p {
+    top: 1850px;
+    position: absolute;
+    z-index: -87;
+    left: 450px;
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+}
+
+
+#footerp7 {
+    top: 2050px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 0;
+}
+
+#footerp8 {
+    top: 2050px;
+    z-index: 800;
+    color: brown;
+    position: relative;
+    width: 250px;
+    left: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 0;
+}
